@@ -1,11 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ugi Cake</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<!-- Script kamu -->
+<script src="script.js"></script>
+
+
+
 </head>
+
 <body>
-    
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h2 class="logo">🍰 Ugi Cake</h2>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#order">Pesan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Kue Manis untuk Hari Spesialmu</h1>
+      <p>Pesan kue premium homemade dengan rasa lembut dan tampilan aesthetic ✨</p>
+
+      <div class="hero-btn">
+        <a href="#menu" class="btn">Lihat Menu</a>
+        <a href="#order" class="btn secondary">Pesan Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Produk -->
+  <section id="menu" class="section">
+    <h2 class="title">🍪 Daftar Kue Favorit</h2>
+
+    <div class="menu-grid">
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?brownies" alt="Brownies">
+        <h3>Brownies Coklat</h3>
+        <p>Rp 45.000</p>
+        <button onclick="pilihKue('Brownies Coklat')">Pesan</button>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?redvelvet" alt="Red Velvet">
+        <h3>Red Velvet Cake</h3>
+        <p>Rp 75.000</p>
+        <button onclick="pilihKue('Red Velvet Cake')">Pesan</button>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?cheesecake" alt="Cheesecake">
+        <h3>Cheesecake Strawberry</h3>
+        <p>Rp 80.000</p>
+        <button onclick="pilihKue('Cheesecake Strawberry')">Pesan</button>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?cupcake" alt="Cupcake">
+        <h3>Cupcake Vanilla</h3>
+        <p>Rp 25.000</p>
+        <button onclick="pilihKue('Cupcake Vanilla')">Pesan</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="section pastel">
+    <h2 class="title">⭐ Testimoni Pelanggan</h2>
+
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p>"Kuenya lembut banget, recommended!"</p>
+        <h4>- Sarah</h4>
+      </div>
+
+      <div class="testi-card">
+        <p>"Pesanan datang cepat dan rasanya premium!"</p>
+        <h4>- Kevin</h4>
+      </div>
+
+      <div class="testi-card">
+        <p>"Tampilan cantik, cocok buat hadiah ulang tahun."</p>
+        <h4>- Aisyah</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Order -->
+  <section id="order" class="section">
+    <h2 class="title">🛒 Form Pemesanan Online</h2>
+
+    <form id="orderForm">
+      <input type="text" id="nama" placeholder="Nama Pembeli" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="wa" placeholder="Nomor WhatsApp" required>
+
+      <select id="produk" required>
+        <option value="">Pilih Kue</option>
+        <option>Brownies Coklat</option>
+        <option>Red Velvet Cake</option>
+        <option>Cheesecake Strawberry</option>
+        <option>Cupcake Vanilla</option>
+      </select>
+
+      <input type="number" id="jumlah" placeholder="Jumlah Pesanan" required>
+
+      <textarea id="alamat" placeholder="Alamat Pengiriman" required></textarea>
+      <textarea id="catatan" placeholder="Catatan Tambahan"></textarea>
+
+      <button type="submit">✅ Kirim Pesanan</button>
+    </form>
+  </section>
+
+  <!-- Pembayaran -->
+  <section class="section pastel">
+    <h2 class="title">💳 Metode Pembayaran</h2>
+    <ul class="payment">
+      <li>🏦 Transfer Bank: BCA / Mandiri</li>
+      <li>📱 E-Wallet: Dana, OVO, Gopay</li>
+      <li>🚚 COD (Bayar di Tempat)</li>
+    </ul>
+    <p class="note">Setelah order dikirim, admin akan konfirmasi pembayaran via WhatsApp ✨</p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="section">
+    <h2 class="title">📞 Kontak & Sosial Media</h2>
+
+    <div class="contact-box">
+      <p>📱 WhatsApp: <a href="https://wa.me/6281326973619" target="_blank">Chat Sekarang</a></p>
+      <p>📷 Instagram: <a href="#">@sweetcake.id</a></p>
+      <p>✉ Email: sweetcake@gmail.com</p>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.287104700862!2d106.8271539!3d-6.1753924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e6f0b7fdfd%3A0x1f5a4d8e2d8f8c0!2sMonas!5e0!3m2!1sen!2sid!4v1700000000000"
+        width="100%"
+        height="250"
+        style="border:0; border-radius:15px;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <p>🎉 Pesanan berhasil dikirim ke admin!</p>
+  </div>
+
+  <footer>
+    <p>© 2026 SweetCake Store | Dibuat dengan ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -44,38 +44,81 @@
 
   <!-- Menu Produk -->
   <section id="menu" class="section">
-    <h2 class="title">🍪 Daftar Kue Favorit</h2>
+    <h2 class="title">🍪 Daftar Kue / Snack</h2>
 
     <div class="menu-grid">
 
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?brownies" alt="Brownies">
-        <h3>Brownies Coklat</h3>
-        <p>Rp 45.000</p>
+        <img src="img/putuayu.png" alt="Brownies">
+        <h3>Putu Ayu</h3>
+        <a href="#order">
         <button onclick="pilihKue('Brownies Coklat')">Pesan</button>
+        </a>
       </div>
 
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?redvelvet" alt="Red Velvet">
-        <h3>Red Velvet Cake</h3>
-        <p>Rp 75.000</p>
+        <img src="img/bolu.png" alt="Red Velvet">
+        <h3>Bolu Pandan</h3>
+        <a href="#order">
         <button onclick="pilihKue('Red Velvet Cake')">Pesan</button>
+        </a>
       </div>
 
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?cheesecake" alt="Cheesecake">
-        <h3>Cheesecake Strawberry</h3>
-        <p>Rp 80.000</p>
+        <img src="img/putrii.jpg" alt="Cheesecake">
+        <h3>Putri Salju</h3>
+        <a href="#order">
         <button onclick="pilihKue('Cheesecake Strawberry')">Pesan</button>
+        </a>
       </div>
 
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?cupcake" alt="Cupcake">
-        <h3>Cupcake Vanilla</h3>
-        <p>Rp 25.000</p>
+        <img src="img/pelangi.png" alt="Cupcake">
+        <h3>Bolu Semangka</h3>
+        <a href="#order">
         <button onclick="pilihKue('Cupcake Vanilla')">Pesan</button>
+        </a>
       </div>
 
+       <div class="card">
+        <img src="img/tahuisi.png" alt="Cupcake">
+        <h3>Tahu Isi</h3>
+        <a href="#order">
+        <button onclick="pilihKue('Cupcake Vanilla')">Pesan</button>
+        </a>
+      </div>
+
+       <div class="card">
+        <img src="img/risol.png" alt="Cupcake">
+        <h3>Risol isi sayur/Bihun</h3>
+        <a href="#order">
+        <button onclick="pilihKue('Cupcake Vanilla')">Pesan</button>
+        </a>
+      </div>
+
+       <div class="card">
+        <img src="img/nasikuning.png" alt="Cupcake">
+        <h3>Nasi Kuning</h3>
+        <a href="#order">
+        <button onclick="pilihKue('Cupcake Vanilla')">Pesan</button>
+        </a>
+      </div>
+
+       <div class="card">
+        <img src="img/ager.png" alt="Cupcake">
+        <h3>Ager Ager Buah Naga</h3>
+        <a href="#order">
+        <button onclick="pilihKue('Cupcake Vanilla')">Pesan</button>
+        </a>
+      </div>
+
+       <div class="card">
+        <img src="img/nasitumpeng.png" alt="Cupcake">
+        <h3>Nasi Tumpeng</h3>
+        <a href="#order">
+        <button onclick="pilihKue('Cupcake Vanilla')">Pesan</button>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -83,20 +126,27 @@
   <section id="testimoni" class="section pastel">
     <h2 class="title">⭐ Testimoni Pelanggan</h2>
 
-    <div class="testi-grid">
-      <div class="testi-card">
-        <p>"Kuenya lembut banget, recommended!"</p>
-        <h4>- Sarah</h4>
+    <div class="testi-card">
+      <img src="img/tahuisi.png" alt="Sarah">
+      <div class="testi-content">
+      <p>"Kuenya lembut banget, recommended! Rasanya premium banget."</p>
+      <h4>Sarah</h4>
       </div>
+    </div>
 
-      <div class="testi-card">
-        <p>"Pesanan datang cepat dan rasanya premium!"</p>
-        <h4>- Kevin</h4>
+    <div class="testi-card">
+      <img src="img/bolu.png" alt="Kevin">
+      <div class="testi-content">
+      <p>"Pesanan datang cepat dan tampilannya cantik banget."</p>
+      <h4>Kevin</h4>
       </div>
+    </div>
 
-      <div class="testi-card">
-        <p>"Tampilan cantik, cocok buat hadiah ulang tahun."</p>
-        <h4>- Aisyah</h4>
+    <div class="testi-card">
+      <img src="img/risol.png" alt="Aisyah">
+      <div class="testi-content">
+      <p>"Cocok banget buat ulang tahun, pasti order lagi!"</p>
+      <h4>Aisyah</h4>
       </div>
     </div>
   </section>
@@ -111,11 +161,17 @@
       <input type="text" id="wa" placeholder="Nomor WhatsApp" required>
 
       <select id="produk" required>
-        <option value="">Pilih Kue</option>
-        <option>Brownies Coklat</option>
-        <option>Red Velvet Cake</option>
-        <option>Cheesecake Strawberry</option>
-        <option>Cupcake Vanilla</option>
+        <option value="">Pilih Kue/Snack</option>
+        <option>Putu Ayu</option>
+        <option>Bolu Pandan</option>
+        <option>Putri Salju</option>
+        <option>Bolu Semangka</option>
+        <option>Tahu Isi</option>
+        <option>Risol isi sayur/Bihun</option>
+        <option>Nasi Kuning</option>
+        <option>Ager" Buah Naga</option>
+        <option>Nasi Tumpeng</option>
+        <option>Kentang Mustofa (ORDER KE WA)</option>
       </select>
 
       <input type="number" id="jumlah" placeholder="Jumlah Pesanan" required>
@@ -131,8 +187,8 @@
   <section class="section pastel">
     <h2 class="title">💳 Metode Pembayaran</h2>
     <ul class="payment">
-      <li>🏦 Transfer Bank: BCA / Mandiri</li>
-      <li>📱 E-Wallet: Dana, OVO, Gopay</li>
+      <li>🏦 Transfer Bank: BNI / BRI</li>
+      <li>📱 E-Wallet: Dana, QRIS All Pay, Gopay</li>
       <li>🚚 COD (Bayar di Tempat)</li>
     </ul>
     <p class="note">Setelah order dikirim, admin akan konfirmasi pembayaran via WhatsApp ✨</p>
@@ -143,12 +199,12 @@
     <h2 class="title">📞 Kontak & Sosial Media</h2>
 
     <div class="contact-box">
-      <p>📱 WhatsApp: <a href="https://wa.me/6281326973619" target="_blank">Chat Sekarang</a></p>
-      <p>📷 Instagram: <a href="#">@sweetcake.id</a></p>
-      <p>✉ Email: sweetcake@gmail.com</p>
+      <p>📱 WhatsApp: <a href="https://wa.me/6281326973619" target="_blank">Ugi Cake</a></p>
+      <p>📷 Instagram: <a href="#">@ugi.cake</a></p>
+      <p>✉ Email: ugicake555@gmail.com</p>
 
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.287104700862!2d106.8271539!3d-6.1753924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e6f0b7fdfd%3A0x1f5a4d8e2d8f8c0!2sMonas!5e0!3m2!1sen!2sid!4v1700000000000"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.005329818975!2d109.37779450817004!3d-6.890282873610625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fd9047dee05dd%3A0x53fc11a50a177813!2sAlun-Alun%20Pemalang!5e0!3m2!1sid!2sid!4v1771750967364!5m2!1sid!2sid"
         width="100%"
         height="250"
         style="border:0; border-radius:15px;"
@@ -164,7 +220,7 @@
   </div>
 
   <footer>
-    <p>© 2026 SweetCake Store | Dibuat dengan ❤️</p>
+    <p>© 2026 Ugi Cake | Dibuat dengan anake sing ganteng pasya</p>
   </footer>
 
   <script src="script.js"></script>

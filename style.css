@@ -211,3 +211,88 @@ footer {
     font-size: 14px;
   }
 }
+
+.testi-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.testi-card:hover {
+  transform: translateY(-5px);
+}
+
+.testi-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px; /* bukan bulat */
+  object-fit: cover;
+}
+
+.testi-content p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.testi-content h4 {
+  color: #ff8fb1;
+  font-weight: 600;
+}
+
+/* ============================= */
+/* FIX HP YANG BENER */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  /* HAPUS efek body padding */
+  body {
+    padding: 0;
+  }
+
+  /* Section biar gak sempit */
+  .section {
+    padding: 50px 25px;
+  }
+
+  /* Navbar lebih rapih */
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .navbar a {
+    margin: 0 10px;
+  }
+
+  /* Hero biar gak kepanjangan */
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  /* Testimoni biar gak berantakan */
+  .testi-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testi-card img {
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+  }
+
+}
